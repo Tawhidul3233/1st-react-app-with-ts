@@ -3,14 +3,19 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Users from './secation/Users'
+import NewsList from './secation/NewsList'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
       <div >
-        <Users> </Users>
+        <div>
+          <Users> </Users>
+        </div>
+        <div >
+          <NewsList  > </NewsList>
+        </div>
       </div>
     </>
   )
