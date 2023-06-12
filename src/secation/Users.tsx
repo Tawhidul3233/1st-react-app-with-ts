@@ -5,9 +5,9 @@ const Users = () => {
   return (
     <div>
       <p className='text-3xl font-bold underline  '>Users List</p>
-      <User name='Md Rony' age={22} audilt={true} > </User> <br />
-      <User name='Md Akash' age={55} audilt={true}> </User> <br />
-      <User name='Nille' age={15} audilt={false}> </User>
+      <User name='Md Rony' age={22} audilt={true} lang={['Bangla', 'English', 'Hindi']} > </User> <br />
+      <User name='Md Akash' age={55} audilt={true} lang={['Bangla', 'English', 'Hindi']} > </User> <br />
+      <User name='Nille' age={15} audilt={false} lang={['Bangla', 'English', 'Hindi']} > </User>
     </div>
   );
 };

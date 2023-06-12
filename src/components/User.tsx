@@ -1,7 +1,7 @@
 import React from 'react';
 // string, number, boolean, null, void
 
-type userProps = { name: string; age: number, audilt: boolean }
+type userProps = { name: string; age: number, audilt: boolean, lang: string[] }
 
 const User = (props: userProps) => {
   let aut = ''
@@ -11,11 +11,17 @@ const User = (props: userProps) => {
     aut = 'no'
   }
 
+
   return (
     <div>
       <p> Name: {props.name} </p>
       <p> Age:  {props.age}</p>
       <p> Audilt: {aut} </p>
+      <p> lang : {
+        props.lang.map((l, i) => <span key={i}>
+           {l}, 
+        </span>)
+      } </p>
     </div>
   );
 };
