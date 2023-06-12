@@ -1,18 +1,16 @@
 import React from 'react';
 
 type userType = {
-  user: {
-    name: string,
-    about: string,
-    lang: string[]
-  }
+  name: string,
+  about: string,
+  lang: string[]
 }
-const UserOb = ({ user }: userType) => {
+const UserOb = ({ name, about, lang }: userType) => {
   return (
     <div>
-      <h2>Name : {user.name} </h2>
-      <p> About : {user.about}  </p>
-      <p> Lang : {user.lang.map((l, i) => <span key={i}> {l} </span>)} </p>
+      <h2>Name : {name} </h2>
+      <p> About : {about}  </p>
+      <p> Lang : {lang?.map((l, i) => <span key={i}> {l} </span>)} </p>
     </div>
   );
 };
