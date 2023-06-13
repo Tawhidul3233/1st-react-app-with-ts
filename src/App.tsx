@@ -9,6 +9,7 @@ import DemoUsers from './secation/DemoUsers'
 import FetchDatas from './secation/FetchDatas'
 import ButtonSection from './secation/ButtonSection'
 import CardSection from './secation/CardSection'
+import StylePropsSection from './secation/StylePropsSection'
 
 function App() {
 
@@ -35,6 +36,9 @@ function App() {
         </div>
         <div className=' border-2 p-20'>
           <CardSection />
+        </div>
+        <div className=' border-2 p-20'>
+          <StylePropsSection />
         </div>
       </div>
     </>
