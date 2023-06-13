@@ -8,6 +8,7 @@ import UserObj from './secation/UserObj'
 import DemoUsers from './secation/DemoUsers'
 import FetchDatas from './secation/FetchDatas'
 import ButtonSection from './secation/ButtonSection'
+import CardSection from './secation/CardSection'
 
 function App() {
 
@@ -15,22 +16,25 @@ function App() {
     <>
       <div >
         <div className=' border-2 p-20'>
-          <Users> </Users>
+          <Users />
         </div>
         <div className=' border-2 p-20'>
-          <NewsList  > </NewsList>
+          <NewsList />
         </div>
         <div className=' border-2 p-20'>
-          <UserObj  > </UserObj>
+          <UserObj />
         </div>
         <div className=' border-2 p-20'>
-          <DemoUsers  > </DemoUsers>
+          <DemoUsers />
         </div>
         <div className=' border-2 p-20'>
-          <FetchDatas  > </FetchDatas>
+          <FetchDatas />
         </div>
         <div className=' border-2 p-20'>
-          <ButtonSection  > </ButtonSection>
+          <ButtonSection />
+        </div>
+        <div className=' border-2 p-20'>
+          <CardSection />
         </div>
       </div>
     </>
