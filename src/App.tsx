@@ -12,6 +12,7 @@ import CardSection from './secation/CardSection'
 import StylePropsSection from './secation/StylePropsSection'
 import AddUser from './secation/AddUser'
 import AddNewUser from './secation/AddNewUser'
+import UserForm from './secation/UserForm'
 
 function App() {
 
@@ -47,6 +48,9 @@ function App() {
         </div>
         <div className=' border-2 p-20'>
           <AddNewUser />
+        </div>
+        <div className=' border-2 p-20'>
+          <UserForm />
         </div>
       </div>
     </>
