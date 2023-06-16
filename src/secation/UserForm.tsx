@@ -8,6 +8,8 @@ const UserForm = () => {
   const handelNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setName(event.target.value)
     setShow(false)
+    const {name, value} = event.target;
+    console.log(name, value)
   }
   const handelEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(event.target.value)
@@ -15,7 +17,7 @@ const UserForm = () => {
 
   const handelFormSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    console.log(name, email)
+    // console.log(name, email)
     setShow(true)
   }
 
@@ -25,10 +27,10 @@ const UserForm = () => {
       <p>User Form</p>
       <form onSubmit={handelFormSubmit}>
         <label htmlFor="name"> Name:
-          <input type="text" name="" id="name" value={name} onChange={handelNameChange} style={{ border: "1px solid blue", margin: "15px" }} />
+          <input type="text" name="name" id="name" value={name} onChange={handelNameChange} style={{ border: "1px solid blue", margin: "15px" }} />
         </label> <br />
         <label htmlFor="email"> Email:
-          <input type="email" name="" id="email" value={email} onChange={handelEmailChange} style={{ border: "1px solid blue", margin: "15px" }} />
+          <input type="email" name="email" id="email" value={email} onChange={handelEmailChange} style={{ border: "1px solid blue", margin: "15px" }} />
         </label> <br />
         <button type='submit' style={{ background: "green", color: "white" }} > create new user </button>
       </form>

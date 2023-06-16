@@ -13,6 +13,7 @@ import StylePropsSection from './secation/StylePropsSection'
 import AddUser from './secation/AddUser'
 import AddNewUser from './secation/AddNewUser'
 import UserForm from './secation/UserForm'
+import Counter from './secation/Counter'
 
 function App() {
 
@@ -51,6 +52,9 @@ function App() {
         </div>
         <div className=' border-2 p-20'>
           <UserForm />
+        </div>
+        <div className=' border-2 p-20'>
+          <Counter />
         </div>
       </div>
     </>
